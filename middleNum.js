@@ -1,6 +1,6 @@
-function middleNum(arr){
+var middleNum=function(arr){
     var length=arr.length;
-    arr.sort(function NumAscSort(a,b) {return a - b;});
+    arr.sort((a,b)=>a - b);
     if(length%2==0)
     return (arr[length/2-1]+arr[length/2])/2;
     return arr[Math.ceil(length/2)-1];
