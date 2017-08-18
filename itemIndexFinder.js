@@ -6,17 +6,8 @@ var IndexFinder=(arr,element)=>{
     let result=[];
     arr.filter((item,index)=>item==element&&result.push(index));
     return result;
-
 }
 
-/*
-function findAllOccurrences(arr, target) {
-    var result=[];
-    arr.filter(function(item,index){
-        return item===target&&result.push(index);
-    });
-    return result;
-}*/
 let arr=[1, 3, 7, 1 ,4,];
 let  item=1;
 console.log(`数组[${arr}]中元素${item}的位置是${IndexFinder(arr,item)}`);
